@@ -1,15 +1,15 @@
-img {
-  width: 100%;
-  filter: grayscale(1);
-  transition: all 700ms ease;
-  cursor: pointer;
-}
-
-img:hover {
-  filter: grayscale(0.3);
-  transform: scale(1.2);
-}
 .main-grid {
+  img {
+    width: 100%;
+    filter: grayscale(1);
+    transition: all 700ms ease;
+    cursor: pointer;
+  }
+
+  img:hover {
+    filter: grayscale(0.3);
+    transform: scale(1.2);
+  }
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 1em;
@@ -21,7 +21,9 @@ img:hover {
     grid-row: 1;
     font-size: 4rem;
     padding: 0 0.5em;
+
   }
+  
   .img-1 {
     z-index: -1;
     grid-column: 1/4;
@@ -53,16 +55,51 @@ img:hover {
     display: grid;
     grid-template-columns: subgrid;
     div {
-      grid-column: 2/-1;
+      grid-column: 1/-1;
       font-style: italic;
       h2 {
-        font-size: 3rem;
-        margin-top: 1em;
+        font-size: 4rem;
+        padding-left: 15vw;
+        line-height: 1.5;
       }
-      .para-one {
-        font-size: 2rem;
-        line-height: 1.8;
+      p {
+        padding-left: 15vw;
+        line-height: 1.5;
+        font-size: 3rem;
+      }
+      .step-1 {
+        grid-row: 1;
+      }
+      .step-2 {
+        grid-row: 2;
       }
     }
+  }
+}
+
+
+@media screen and (max-width:1200px) {
+  .main-grid h1{
+    padding-top: 1em;
+    grid-column: 1/-1;
+    grid-row: 1;
+    font-size: 2rem;
+    text-align: center;
+
+  }
+  .main-grid .para{
+    grid-column: 3/-1;
+  }
+  .main-grid .para .step-1 h2, .main-grid .para .step-2 h2{
+    font-size: 2rem;
+  }
+  .main-grid .para .step-1 p, .main-grid .para .step-2 p{
+    font-size: 1.5rem;
+  }
+  .main-grid .img-2{
+    grid-column: 2/4;
+  }
+  .main-grid .img-3{
+    grid-column: 2/4;
   }
 }

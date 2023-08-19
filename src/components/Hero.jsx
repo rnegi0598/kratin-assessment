@@ -2,7 +2,6 @@ import React from "react";
 import typewriterImg from "../assets/typewriter.jpg";
 import grannyImg from "../assets/granny-1.jpg";
 import boyImg from "../assets/boy-writing.jpg";
-import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
 import "./hero.scss";
 
 const Hero = () => {
@@ -19,15 +18,13 @@ const Hero = () => {
         <img src={boyImg} alt="boy" />
       </div>
       <div className="para">
-        <div>
-          <h2>Because</h2>
-
-          <p className="para-one">
-            <FormatQuoteIcon sx={{ mr: 1, fontSize: 50 }} />
-            Every whispered memory deserves to be transformed into a beautiful
-            story.
-            <FormatQuoteIcon sx={{ ml: 1, fontSize: 50 }} />
-          </p>         
+        <div className="step-1">
+          <h2>Step 1</h2>
+          <p>Your Story, Your Legacy: Share Your Experiences</p>        
+        </div>
+        <div className="step-2">
+          <h2>Step 2</h2>
+          <p>Crafted with Care: Hire a Pro to Chronicle Your Journey</p>        
         </div>
       </div>
     </div>

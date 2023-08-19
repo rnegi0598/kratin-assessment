@@ -6,6 +6,7 @@ import DrawerAppBar from "./components/DrawerAppBar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Stories from "./components/Stories";
+import Footer from "./components/Footer";
 
 const theme = createTheme({
   palette: {
@@ -27,6 +28,7 @@ function App() {
         <Hero />
         <About />
         <Stories />
+        <Footer/>
       </ThemeProvider>
     </>
   );
