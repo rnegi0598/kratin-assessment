@@ -1,6 +1,9 @@
 # Story Telling App - WisdomInk
 
-
+# Screenshots
+![image 1](./public/1.png)
+![image 2](./public/2.png)
+![image 3](./public/3.png)
 
 # WisdomInk: Preserve Your Legacy Through Words
 
